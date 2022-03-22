@@ -20,7 +20,10 @@ def result(user_pick,comp_pick):
     else:
         return"lose"
 comp=comp_choice()
-user=user_choice()
+while True:
+    user=user_choice()
+    if user in['rock','paper','scissor']:
+        break
 res=result(user,comp)
 print(f'your pick:{user}')
 print(f'computer pick:{comp}')
